@@ -12,6 +12,6 @@ add_action('wp_enqueue_scripts', 'muiteer_enqueue_child_styles');
 
 function muiteer_enqueue_child_scripts() {
 	$parent_script = 'muiteer-parent-script';
-    wp_enqueue_script($parent_script, get_stylesheet_directory_uri() . '/main.js', array('jquery'),'', true);
+    wp_enqueue_script($parent_script, get_stylesheet_directory_uri() . '/main.js', array('jquery'), '', true);
 }
 add_action('wp_enqueue_scripts', 'muiteer_enqueue_child_scripts');
