@@ -1,5 +1,5 @@
 "use strict";
 
-function zaxuCallBack() {
+function muiteerCallBack() {
 	// Theme customization starts here
 }
