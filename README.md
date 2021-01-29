@@ -1,2 +1,2 @@
-# zaxu-child
+# ZAXU CHILD
 ZAXU Child Theme for WordPress
