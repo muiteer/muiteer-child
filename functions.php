@@ -1,7 +1,7 @@
 <?php
 /*
  * @Description: Theme child functions
- * @Version: 1.0.7
+ * @Version: 1.0.8
  * @Author: ZAXU
  * @Link: http://www.zaxu.com
  * @Package: ZAXU
@@ -16,14 +16,13 @@ function zaxu_enqueue_child_styles() {
 add_action('wp_enqueue_scripts', 'zaxu_enqueue_child_styles');
 
 function zaxu_enqueue_child_scripts() {
-  $parent_script = 'zaxu-parent-script';
   wp_enqueue_script(
-    $parent_script,
+    'zaxu-parent-script',
     get_stylesheet_directory_uri() . '/main.js',
     array('jquery'),
-    '',
+    true,
     true
   );
 }
-add_action('wp_enqueue_scripts', 'zaxu_enqueue_child_scripts');
+add_action('wp_enqueue_scripts', 'zaxu_enqueue_child_scripts', 12);
 ?>
